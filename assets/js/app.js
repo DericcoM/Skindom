@@ -1,4 +1,3 @@
-
 /* Towns toggle */
 $(".towns").click(function() {
         $(".town-arrow").toggleClass("open");
@@ -73,8 +72,8 @@ function selectClass(evt, tabTxt) {
 
 /* order accordion */
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+let acc = document.getElementsByClassName("accordion");
+let i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
@@ -131,8 +130,9 @@ function selectPayment(evt) {
 /* Личный кабинет */
 
 /* nav bar */
-
 document.getElementById("defaultOpen").click();
+
+
 
 function openPersonality(evt, navName) {
     var i, tabcontent, tablinks;
@@ -147,3 +147,9 @@ function openPersonality(evt, navName) {
     document.getElementById(navName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+
+/* Map */
+
+
+
