@@ -1,6 +1,6 @@
 /* Swiper elements index.html */
-jQuery(document).ready(function sliderSale() {
-    let swiper = new Swiper(".mySwiper", {
+async function sliderSale() {
+    new Swiper(".mySwiper", {
         speed: 800,
         slidesPerView: 3,
         spaceBetween: 30,
@@ -17,10 +17,10 @@ jQuery(document).ready(function sliderSale() {
         }
 
     });
-});
+}
 
-jQuery(document).ready(function sliderNews() {
-    let swiper = new Swiper(".swiperNew", {
+async function sliderNews() {
+    new Swiper(".swiperNew", {
         speed: 1000,
         spaceBetween: 50,
         slidesPerGroup: 1,
@@ -36,7 +36,10 @@ jQuery(document).ready(function sliderNews() {
             prevEl: ".swiper-button-next",
         }
     });
-});
+}
+
+sliderSale();
+sliderNews();
 
 /* Towns toggle */
 $(".towns").click(function() {
@@ -68,7 +71,7 @@ $(".btn_soc").click(function(){
 
 /* Delivery button */
 
-function openDelivery(evt, tabName) {
+async function openDelivery(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -108,65 +111,6 @@ function selectClass(evt, tabTxt) {
 */
 
 
-/* Order */
-
-/* order accordion */
-
-let acc = document.getElementsByClassName("accordion");
-let i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-      panel.style.paddingTop = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-      panel.style.paddingTop = "50px";
-    }
-  });
-};
-
-
-
-
-/* Выбор способа доставки */
-function openOrderDelivery(evt) {
-    var i, panel__main__btn__delivery;
-    panel__main__btn__delivery = document.getElementsByClassName("panel__main__btn__delivery");
-    for (i = 0; i < panel__main__btn__delivery.length; i++) {
-        panel__main__btn__delivery[i].className = panel__main__btn__delivery[i].className.replace(" active", "");
-    }
-
-    evt.currentTarget.className += " active";
-};
-
-/* Выбор даты доставки */
-function selectDate(evt) {
-    var i, panel__main__btn__date;
-    panel__main__btn__date = document.getElementsByClassName("panel__main__btn__date");
-    for (i = 0; i < panel__main__btn__date.length; i++) {
-        panel__main__btn__date[i].className = panel__main__btn__date[i].className.replace(" active", "");
-    }
-
-    evt.currentTarget.className += " active";
-};
-
-/* Выбор способа оплаты */
-
-function selectPayment(evt) {
-    var i, panel__payments__item;
-    panel__payments__item = document.getElementsByClassName("panel__payments__item");
-    for (i = 0; i < panel__payments__item.length; i++) {
-        panel__payments__item[i].className = panel__payments__item[i].className.replace(" active", "");
-    }
-
-    evt.currentTarget.className += " active";
-};
-
-
 /* Личный кабинет */
 
 /* nav bar */
@@ -174,7 +118,7 @@ document.getElementById("defaultOpen").click();
 
 
 
-function openPersonality(evt, navName) {
+async function openPersonality(evt, navName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("personality__column__main");
     for (i = 0; i < tabcontent.length; i++) {
