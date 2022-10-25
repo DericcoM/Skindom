@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="widht=device-widht, initial-scale=1">
     <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>SKINDOM</title>
 </head>
 <body>
@@ -35,7 +39,7 @@
 <header class="header" id="main">
    <div class="container" id="container">
        <div class="header__inner" id="header__inner">
-           <a class="header__logo" href="#" id="header__logo"></a>
+           <a class="header__logo" href="../skindom/index.html" id="header__logo"></a>
            <nav class="nav" id="nav">
                <a class="nav__link" href="../skindom/catalog.html">Каталог</a>
                <a class="nav__link" href="../skindom/club.html" >Клуб косметологов</a>
@@ -113,200 +117,266 @@
 </section>
 
 <section class="section">
-    <div class="container">
-        <div class="section__header">
-            <div class="section__header__title">Новинки</div>
-            <div class="section__header__scroll">
-                <div class="header__scroll__item">
-                    <svg class="header-arrow">
-                        <use xlink:href="#arrow-left-gray"></use>
-                    </svg>
+        <div class="container">
+            <div class="section__header">
+                <div class="section__header__title">Новинки</div>
+
+            </div>
+            <div class="section__main section__main-news">
+                <div class="swiper mySwiper">
+                    <div class="section__swiper">
+
+                        <div class="swiper-button-next">
+                                <svg class="header-arrow">
+                                    <use xlink:href="#arrow-right-black"></use>
+                                </svg>
+                        </div>
+                        <div class="swiper-button-prev">
+                                <svg class="header-arrow">
+                                    <use xlink:href="#arrow-left-gray"></use>
+                                </svg>
+                        </div>
+                    </div>
+
+                    <div class="swiper-wrapper">
+
+
+                <div class="swiper-slide">
+                    <a href="../skindom/product-card.html" class="section__items">
+                        <div class="section__product-card">
+                            <div class="product-card__sell active">sell</div>
+                            <img class="product-card__img" src="../skindom/assets/images/section-product-1.png" alt="">
+                        </div>
+                        <div class="section__product-info">
+                            <div class="product-info__title">Slimming Gel Body</div>
+                            <div class="product-info__subtitle">
+                                <div class="product-info__subtitle-info">Гель для тела для похудения</div>
+                                <div class="product-info__subtitle-price">2 480 руб</div>
+                                <div class="product-info__subtitle-saleprice">3579 руб</div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="header__scroll__item">
-                    <svg class="header-arrow">
-                        <use xlink:href="#arrow-right-black"></use>
-                    </svg>
+
+                <div class="swiper-slide">
+                    <a href="../skindom/product-card.html" class="section__items">
+                        <div class="section__product-card">
+                            <div class="product-card__sell">sell</div>
+                            <img class="product-card__img" src="../skindom/assets/images/section-product-2.png" alt="">
+                        </div>
+                        <div class="section__product-info">
+                            <div class="product-info__title">Slimming Gel Body</div>
+                            <div class="product-info__subtitle">
+                                <div class="product-info__subtitle-info">Гель для тела для похудения</div>
+                                <div class="product-info__subtitle-price">2 480 руб</div>
+                                <div class="product-info__subtitle-saleprice">3579 руб</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="../skindom/product-card.html" class="section__items">
+                        <div class="section__product-card">
+                            <div class="product-card__sell active">sell</div>
+                            <img class="product-card__img" src="../skindom/assets/images/section-product-1.png" alt="">
+                        </div>
+                        <div class="section__product-info">
+                            <div class="product-info__title">Slimming Gel Body</div>
+                            <div class="product-info__subtitle">
+                                <div class="product-info__subtitle-info">Гель для тела для похудения</div>
+                                <div class="product-info__subtitle-price">2 480 руб</div>
+                                <div class="product-info__subtitle-saleprice">3579 руб</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="../skindom/product-card.html" class="section__items">
+                        <div class="section__product-card">
+                            <div class="product-card__sell">sell</div>
+                            <img class="product-card__img" src="../skindom/assets/images/section-product-3.png" alt="">
+                        </div>
+                        <div class="section__product-info">
+                            <div class="product-info__title">Slimming Gel Body</div>
+                            <div class="product-info__subtitle">
+                                <div class="product-info__subtitle-info">Гель для тела для похудения</div>
+                                <div class="product-info__subtitle-price">2 480 руб</div>
+                                <div class="product-info__subtitle-saleprice">3579 руб</div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="section__main">
-            <a href="../skindom/product-card.html" class="section__items">
-                <div class="section__product-card">
-                    <div class="product-card__sell active">sell</div>
-                    <img class="product-card__img" src="../skindom/assets/images/section-product-1.png" alt="">
                 </div>
-                <div class="section__product-info">
-                    <div class="product-info__title">Slimming Gel Body</div>
-                    <div class="product-info__subtitle">
-                        <div class="product-info__subtitle-info">Гель для тела для похудения</div>
-                        <div class="product-info__subtitle-price">2 480 руб</div>
-                        <div class="product-info__subtitle-saleprice">3579 руб</div>
-                    </div>
-                </div>
-            </a>
-            <a href="../skindom/product-card.html" class="section__items">
-                <div class="section__product-card">
-                    <div class="product-card__sell">sell</div>
-                    <img class="product-card__img" src="../skindom/assets/images/section-product-2.png" alt="">
-                </div>
-                <div class="section__product-info">
-                    <div class="product-info__title">Slimming Gel Body</div>
-                    <div class="product-info__subtitle">
-                        <div class="product-info__subtitle-info">Гель для тела для похудения</div>
-                        <div class="product-info__subtitle-price">2 480 руб</div>
-                        <div class="product-info__subtitle-saleprice">3579 руб</div>
-                    </div>
-                </div>
-            </a>
-            <a href="../skindom/product-card.html" class="section__items">
-                <div class="section__product-card">
-                    <div class="product-card__sell active">sell</div>
-                    <img class="product-card__img" src="../skindom/assets/images/section-product-1.png" alt="">
-                </div>
-                <div class="section__product-info">
-                    <div class="product-info__title">Slimming Gel Body</div>
-                    <div class="product-info__subtitle">
-                        <div class="product-info__subtitle-info">Гель для тела для похудения</div>
-                        <div class="product-info__subtitle-price">2 480 руб</div>
-                        <div class="product-info__subtitle-saleprice">3579 руб</div>
-                    </div>
-                </div>
-            </a>
-            <a href="../skindom/product-card.html" class="section__items">
-                <div class="section__product-card">
-                    <div class="product-card__sell">sell</div>
-                    <img class="product-card__img" src="../skindom/assets/images/section-product-3.png" alt="">
-                </div>
-                <div class="section__product-info">
-                    <div class="product-info__title">Slimming Gel Body</div>
-                    <div class="product-info__subtitle">
-                        <div class="product-info__subtitle-info">Гель для тела для похудения</div>
-                        <div class="product-info__subtitle-price">2 480 руб</div>
-                        <div class="product-info__subtitle-saleprice">3579 руб</div>
-                    </div>
-                </div>
-            </a>
-        </div>
+            </div>
     </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
 
 <section class="section">
     <div class="container">
         <div class="section__header">
-            <div class="section__header__title">Акционные товары</div>
-            <div class="section__header__scroll">
-                <div class="header__scroll__item">
-                    <svg class="header-arrow">
-                        <use xlink:href="#arrow-left-gray"></use>
-                    </svg>
+            <div class="section__header__title">Новинки</div>
+
+        </div>
+        <div class="section__main section__main-news">
+            <div class="swiper swiperNew">
+                <div class="section__swiper">
+
+                    <div class="swiper-button-next">
+                        <svg class="header-arrow">
+                            <use xlink:href="#arrow-right-black"></use>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <svg class="header-arrow">
+                            <use xlink:href="#arrow-left-gray"></use>
+                        </svg>
+                    </div>
                 </div>
-                <div class="header__scroll__item">
-                    <svg class="header-arrow">
-                        <use xlink:href="#arrow-right-black"></use>
-                    </svg>
+
+                <div class="swiper-wrapper">
+
+
+                    <div class="swiper-slide swiper-slide-sale" style="width: 900px">
+                        <a href="../skindom/product-card.html" class="section__promo-item">
+                            <img class="promo-item-img" src="../skindom/assets/images/promotion-item.png" alt="">
+                            <div class="section__promo-info">
+                                <div class="promo-info__title">R&B Black Food 3.7</div>
+                                <div class="promo-info__subtitle">Бальзам-ополаскиватель для волос с экстрактами 3 черных семян и 7 черных плодов</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-sale" style="width: 900px">
+                        <a href="../skindom/product-card.html" class="section__promo-item">
+                            <img class="promo-item-img" src="../skindom/assets/images/promotion-item.png" alt="">
+                            <div class="section__promo-info">
+                                <div class="promo-info__title">R&B Black Food 3.7</div>
+                                <div class="promo-info__subtitle">Бальзам-ополаскиватель для волос с экстрактами 3 черных семян и 7 черных плодов</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-sale" style="width: 900px">
+                        <a href="../skindom/product-card.html" class="section__promo-item">
+                            <img class="promo-item-img" src="../skindom/assets/images/promotion-item.png" alt="">
+                            <div class="section__promo-info">
+                                <div class="promo-info__title">R&B Black Food 3.7</div>
+                                <div class="promo-info__subtitle">Бальзам-ополаскиватель для волос с экстрактами 3 черных семян и 7 черных плодов</div>
+                            </div>
+                        </a>
+                    </div>
+
+
                 </div>
             </div>
         </div>
     </div>
-    <div class="section__main">
-            <a href="../skindom/product-card.html" class="section__promo-item">
-                <img class="promo-item-img" src="../skindom/assets/images/promotion-item.png" alt="">
-                <div class="section__promo-info">
-                    <div class="promo-info__title">R&B Black Food 3.7</div>
-                    <div class="promo-info__subtitle">Бальзам-ополаскиватель для волос с экстрактами 3 черных семян и 7 черных плодов</div>
-                </div>
-            </a>
-            <a href="../skindom/product-card.html" class="section__promo-item active">
-                <img class="promo-item-img" src="../skindom/assets/images/promotion-item.png" alt="">
-                <div class="section__promo-info">
-                    <div class="promo-info__title">R&B Black Food 3.7</div>
-                    <div class="promo-info__subtitle">Бальзам-ополаскиватель для волос с экстрактами 3 черных семян и 7 черных плодов</div>
-                </div>
-            </a>
-            <a href="../skindom/product-card.html" class="section__promo-item">
-                <img class="promo-item-img" src="../skindom/assets/images/promotion-item.png" alt="">
-                <div class="section__promo-info">
-                    <div class="promo-info__title">R&B Black Food 3.7</div>
-                    <div class="promo-info__subtitle">Бальзам-ополаскиватель для волос с экстрактами 3 черных семян и 7 черных плодов</div>
-                </div>
-            </a>
-        </div>
 </section>
+
+
 
 <section class="section">
     <div class="container">
         <div class="section__header">
             <div class="section__header__title">Рекомендуемые товары</div>
-            <div class="section__header__scroll">
-                <div class="header__scroll__item">
-                    <svg class="header-arrow">
-                        <use xlink:href="#arrow-left-gray"></use>
-                    </svg>
+
+        </div>
+        <div class="section__main section__main-news">
+            <div class="swiper mySwiper">
+                <div class="section__swiper">
+
+                    <div class="swiper-button-next">
+                        <svg class="header-arrow">
+                            <use xlink:href="#arrow-right-black"></use>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <svg class="header-arrow">
+                            <use xlink:href="#arrow-left-gray"></use>
+                        </svg>
+                    </div>
                 </div>
-                <div class="header__scroll__item">
-                    <svg class="header-arrow">
-                        <use xlink:href="#arrow-right-black"></use>
-                    </svg>
+
+                <div class="swiper-wrapper">
+
+
+                    <div class="swiper-slide swiper-slide-recomended">
+                        <a href="../skindom/product-card.html" class="section__items">
+                            <div class="section__product-card">
+                                <div class="product-card__sell active">sell</div>
+                                <img class="product-card__img" src="../skindom/assets/images/section-product-1.png" alt="">
+                            </div>
+                            <div class="section__product-info">
+                                <div class="product-info__title">Slimming Gel Body</div>
+                                <div class="product-info__subtitle">
+                                    <div class="product-info__subtitle-info">Гель для тела для похудения</div>
+                                    <div class="product-info__subtitle-price">2 480 руб</div>
+                                    <div class="product-info__subtitle-saleprice">3579 руб</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-recomended">
+                        <a href="../skindom/product-card.html" class="section__items">
+                            <div class="section__product-card">
+                                <div class="product-card__sell">sell</div>
+                                <img class="product-card__img" src="../skindom/assets/images/section-product-4.png" alt="">
+                            </div>
+                            <div class="section__product-info">
+                                <div class="product-info__title">Slimming Gel Body</div>
+                                <div class="product-info__subtitle">
+                                    <div class="product-info__subtitle-info">Гель для тела для похудения</div>
+                                    <div class="product-info__subtitle-price">2 480 руб</div>
+                                    <div class="product-info__subtitle-saleprice">3579 руб</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-recomended">
+                        <a href="../skindom/product-card.html" class="section__items">
+                            <div class="section__product-card">
+                                <div class="product-card__sell">sell</div>
+                                <img class="product-card__img" src="../skindom/assets/images/section-product-5.png" alt="">
+                            </div>
+                            <div class="section__product-info">
+                                <div class="product-info__title">Slimming Gel Body</div>
+                                <div class="product-info__subtitle">
+                                    <div class="product-info__subtitle-info">Гель для тела для похудения</div>
+                                    <div class="product-info__subtitle-price">2 480 руб</div>
+                                    <div class="product-info__subtitle-saleprice">3579 руб</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide swiper-slide-recomended">
+                        <a href="../skindom/product-card.html" class="section__items">
+                            <div class="section__product-card">
+                                <div class="product-card__sell active">sell</div>
+                                <img class="product-card__img" src="../skindom/assets/images/section-product-6.png" alt="">
+                            </div>
+                            <div class="section__product-info">
+                                <div class="product-info__title">Slimming Gel Body</div>
+                                <div class="product-info__subtitle">
+                                    <div class="product-info__subtitle-info">Гель для тела для похудения</div>
+                                    <div class="product-info__subtitle-price">2 480 руб</div>
+                                    <div class="product-info__subtitle-saleprice">3579 руб</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
             </div>
-        </div>
-        <div class="section__main">
-            <a href="../skindom/product-card.html" class="section__items">
-                <div class="section__product-card">
-                    <div class="product-card__sell active">sell</div>
-                    <img class="product-card__img" src="../skindom/assets/images/section-product-1.png" alt="">
-                </div>
-                <div class="section__product-info">
-                    <div class="product-info__title">Slimming Gel Body</div>
-                    <div class="product-info__subtitle">
-                        <div class="product-info__subtitle-info">Гель для тела для похудения</div>
-                        <div class="product-info__subtitle-price">2 480 руб</div>
-                        <div class="product-info__subtitle-saleprice">3579 руб</div>
-                    </div>
-                </div>
-            </a>
-            <a href="../skindom/product-card.html" class="section__items">
-                <div class="section__product-card">
-                    <div class="product-card__sell">sell</div>
-                    <img class="product-card__img" src="../skindom/assets/images/section-product-4.png" alt="">
-                </div>
-                <div class="section__product-info">
-                    <div class="product-info__title">Slimming Gel Body</div>
-                    <div class="product-info__subtitle">
-                        <div class="product-info__subtitle-info">Гель для тела для похудения</div>
-                        <div class="product-info__subtitle-price">2 480 руб</div>
-                        <div class="product-info__subtitle-saleprice">3579 руб</div>
-                    </div>
-                </div>
-            </a>
-            <a href="../skindom/product-card.html" class="section__items">
-                <div class="section__product-card">
-                    <div class="product-card__sell">sell</div>
-                    <img class="product-card__img" src="../skindom/assets/images/section-product-5.png" alt="">
-                </div>
-                <div class="section__product-info">
-                    <div class="product-info__title">Slimming Gel Body</div>
-                    <div class="product-info__subtitle">
-                        <div class="product-info__subtitle-info">Гель для тела для похудения</div>
-                        <div class="product-info__subtitle-price">2 480 руб</div>
-                        <div class="product-info__subtitle-saleprice">3579 руб</div>
-                    </div>
-                </div>
-            </a>
-            <a href="../skindom/product-card.html" class="section__items">
-                <div class="section__product-card">
-                    <div class="product-card__sell active">sell</div>
-                    <img class="product-card__img" src="../skindom/assets/images/section-product-6.png" alt="">
-                </div>
-                <div class="section__product-info">
-                    <div class="product-info__title">Slimming Gel Body</div>
-                    <div class="product-info__subtitle">
-                        <div class="product-info__subtitle-info">Гель для тела для похудения</div>
-                        <div class="product-info__subtitle-price">2 480 руб</div>
-                        <div class="product-info__subtitle-saleprice">3579 руб</div>
-                    </div>
-                </div>
-            </a>
         </div>
     </div>
 </section>
@@ -418,11 +488,10 @@
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assets/js/swiper.js"></script>
 <script src="assets/js/app.js"></script>
-
-
 
 <svg width="0" height="0" class="hidden">
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="Component 3">
@@ -443,13 +512,13 @@
     <path class="nav__icon" fill-rule="evenodd" clip-rule="evenodd" d="M16.687 15.9171C15.3399 17.2073 13.5125 18 11.5 18C7.35786 18 4 14.6421 4 10.5C4 6.35786 7.35786 3 11.5 3C15.6421 3 19 6.35786 19 10.5C19 12.5124 18.2074 14.3397 16.9174 15.6867C16.8738 15.718 16.8321 15.7533 16.7929 15.7925C16.7537 15.8318 16.7184 15.8735 16.687 15.9171ZM17.4735 17.8874C15.8416 19.2086 13.7632 20 11.5 20C6.25329 20 2 15.7467 2 10.5C2 5.25329 6.25329 1 11.5 1C16.7467 1 21 5.25329 21 10.5C21 12.7631 20.2087 14.8413 18.8877 16.4731L22.7071 20.2929C23.0976 20.6835 23.0976 21.3166 22.7071 21.7071C22.3165 22.0976 21.6834 22.0976 21.2929 21.7071L17.4735 17.8874Z"  fill-opacity="0.8"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 10" id="arrow-left-gray">
-    <path d="M3.83 4L6.41 1.41L5 0L0 5L5 10L6.41 8.59L3.83 6H20V4H3.83Z" fill="#B2B2B2"></path>
+    <path d="M3.83 4L6.41 1.41L5 0L0 5L5 10L6.41 8.59L3.83 6H20V4H3.83Z" fill="#000000"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 10" id="arrow-right-black">
     <path d="M16.17 6L13.59 8.59L15 10L20 5L15 0L13.59 1.41L16.17 4H0V6H16.17Z" fill="black"></path>
   </symbol>
 
-  <!--> PAYMENTS <!-->
+  <!-- PAYMENTS !-->
 
 <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69 21" id="visa">
     <g opacity="0.5">

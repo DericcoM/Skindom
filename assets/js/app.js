@@ -1,3 +1,43 @@
+/* Swiper elements index.html */
+jQuery(document).ready(function sliderSale() {
+    let swiper = new Swiper(".mySwiper", {
+        speed: 800,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 1,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-prev",
+            prevEl: ".swiper-button-next",
+        }
+
+    });
+});
+
+jQuery(document).ready(function sliderNews() {
+    let swiper = new Swiper(".swiperNew", {
+        speed: 1000,
+        spaceBetween: 50,
+        slidesPerGroup: 1,
+        slidesPerView: 'auto',
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-prev",
+            prevEl: ".swiper-button-next",
+        }
+    });
+});
+
 /* Towns toggle */
 $(".towns").click(function() {
         $(".town-arrow").toggleClass("open");
@@ -149,7 +189,4 @@ function openPersonality(evt, navName) {
 }
 
 
-/* Map */
-
-
-
+/* Scroll Items */
